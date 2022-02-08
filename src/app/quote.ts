@@ -7,7 +7,7 @@ export class Quote {
     downVote:number;
     showDescription:boolean;
 
-    constructor( text,  author, poster, timePassed, upVote, downVote){
+    constructor( text:any,  author:any, poster:any, timePassed:any, upVote:any, downVote:any){
          this.text=text;
          this.author=author;
          this.poster=poster;
