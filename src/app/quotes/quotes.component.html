@@ -1,9 +1,18 @@
-<div>
-    <h1>My Quotes</h1>
-    <hr>
-    <ul>
-        <li *ngFor='let quote of quotes'>
-          {{quote.text}}
-        </li>
-    </ul>
+<div class="container">
+    <h2 class = "text-center">These are your Quotes for the day</h2>   <hr>
+  
+  <div *ngFor='let quote of quotes; let i = index' class="card">
+        <div class="card-title text-center">
+            <h2>Quote</h2>
+        </div>
+        <div class="card-body text-center">
+            <p id={{i}}>"{{quote.text}}"</p>
+            
+            <p class ="float-right"><i>By {{quote.author}}</i></p>
+            
+        </div>
+        
+    </div>    
+    
   </div>
+  
