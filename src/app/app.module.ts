@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailsComponent } from './details/details.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
-    DetailsComponent
+    DetailsComponent,
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,
