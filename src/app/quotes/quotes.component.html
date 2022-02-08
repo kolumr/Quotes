@@ -11,7 +11,13 @@
             <p class ="float-right"><i>By {{quote.author}}</i></p>
             
         </div>
-        
+        <div class="card-footer text-muted">
+            <button type="button" (click)= 'addLikes()' class="btn btn-outline-primary">Likes  {{quote.upVote}}</button>
+                 &nbsp; 
+                 <button type="button" (click)= 'addDislikes()' class="btn btn-outline-danger">Dislikes  {{quote.downVote}}</button>
+                 <button (click)='deleteQuote(i)' class = "float-right btn-primary-outline">
+                   delete</button>
+        </div>
     </div>    
     
   </div>
