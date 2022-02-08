@@ -17,5 +17,10 @@ export class Quote {
  
          this.showDescription=false;
     }
-    
+    setUpVote(addition:number){
+        this.upVote+=1;
+    }
+    setDownVote(addition:number){
+        this.downVote+=1;
+    }
 }

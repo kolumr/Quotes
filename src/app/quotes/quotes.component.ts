@@ -19,7 +19,7 @@ export class QuotesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  deleteQuote(index:number){
+  deleteQuote(index:any){
     let toDelete = confirm(`Are you sure you want to delete this quote?`)
   
   if (toDelete){
