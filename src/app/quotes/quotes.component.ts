@@ -32,10 +32,10 @@ addNewQuote(quote:any){
   this.quotes.push(quote);
 }
 
-addLikes(){
-  this.quote.upVote+=1;
+addLikes(i:any){
+  this.quotes[i].upVote+=1;
   }
-addDislikes(){
-  this.quote.downVote+=1;
+addDislikes(i:any){
+  this.quotes[i].downVote+=1;
 }
 }
