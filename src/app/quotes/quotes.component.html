@@ -11,9 +11,7 @@
             <p class ="float-right"><i>By {{quote.author}}</i></p>
             
         </div>
-        <app-details>
-            {{quote.poster}}
-        </app-details>
+        <app-details [quote] = "quotes" [id] = "i"></app-details>
         <div class="card-footer text-muted">
             <button type="button" (click)= 'addLikes()' class="btn btn-outline-primary">Likes  {{quote.upVote}}</button>
                  &nbsp; 
