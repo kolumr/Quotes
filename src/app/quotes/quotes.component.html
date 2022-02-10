@@ -7,10 +7,7 @@
         </div>
         <div class="card-body text-center">
             <p id={{i}}>"{{quote.text}}"</p>
-            
-            
-            
-        </div>
+         </div>
         <app-details [quote] = "quotes" [id] = "i"></app-details>
         <div class="card-footer text-muted">
             <button type="button" (click)= 'addLikes(i)' class="btn btn-outline-primary">Likes  {{quote.upVote}}</button>
@@ -20,6 +17,6 @@
                    delete</button>
         </div>
     </div>    
-    <app-quote-form (onNewQuote)="addNewQuote($event)"></app-quote-form>
+    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </div>
   

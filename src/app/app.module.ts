@@ -8,6 +8,7 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailsComponent } from './details/details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { TimePostedPipe } from './time-posted.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
     QuotesComponent,
     DetailsComponent,
     QuoteFormComponent,
+    TimePostedPipe,
     
   ],
   imports: [
