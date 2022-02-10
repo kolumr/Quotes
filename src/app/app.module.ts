@@ -9,6 +9,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailsComponent } from './details/details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { TimePostedPipe } from './time-posted.pipe';
+import { VotesDirective } from './votes.directive';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TimePostedPipe } from './time-posted.pipe';
     DetailsComponent,
     QuoteFormComponent,
     TimePostedPipe,
+    VotesDirective,
     
   ],
   imports: [
